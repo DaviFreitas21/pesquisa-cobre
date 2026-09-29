@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+    background-color: #240b02;
+	color: #29231f;
+	font-family: 'Source Sans 3', sans-serif;
+	line-height: 1.6;
+}
+
+header{
+    display:flex;
+    align-items: center;
+    height: 20vh;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, #240b02 90%), url('./images/background.webp');
+	background-position: center;
+	background-size: cover;
+    padding: 2vh 2vh 0;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0vh 2.5vw 2.5vh 2.5vw;
+    border-radius: 2.5vh 2.5vh 2.5vh 2.5vh;
+    background-color: white;
+}
+
+.titulo{
+	color: white;
+	font-family: 'Lora', Georgia, serif;
+	font-size: 5vh;
+	text-align: center;
+    text-shadow: 0.2vh 0.2vh 0.4vh rgba(0, 0, 0, 1);
+}
+
+.titulo-1{
+    margin-top: 0;
+}
+
+.container > div {
+	padding: 1rem 0;
+	border-bottom: 1px solid #ded8d2;
+}
+
+.container > div.fontes {
+    padding-bottom:0;
+    border-bottom: none;
+}
+
+.container h2 {
+	color: #71391f;
+	font-family: 'Lora', Georgia, serif;
+	line-height: 1.3;
+    
+}
+
+.container p {
+    margin-top:0;
+}
+
+.container a {
+	overflow-wrap: anywhere;
+}
+
+.container img {
+	display: block;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	margin: 1vh auto;
+}
+
+.texto{
+    margin: 0;
+}
+
+.lista{
+    padding-left: 3vw;
+    margin-bottom:0;
+}
+
+li{
+    margin-bottom: 2vh;
+}
+
+.titulo-tema{
+    font-weight: bold;
+    margin-bottom: 0.1vh; 
+}
+
+footer{
+    background-color:#240b02;
+    color: #ded8d2;
+    padding:2vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-footer{
+    margin:0;
+}
+
+.foto-autor {
+    height: 15vh;
+    width: auto;
+    border-radius: 50%;
+}
+
+.creditos{
+    display:flex;
+    flex-direction: column;
+}
+
+.ordem{
+	display:flex;
+	flex-direction: row;
+}
+
+.div-pai {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.div-docente{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (max-width: 600px) {
+	header {
+		height: 21vh;
+		padding: 2vh 4vw;
+	}
+
+	.container {
+		width: 100%;
+		padding: 1.5vh 5vw;
+	}
+
+	.titulo{
+		margin: 0;
+		font-size: 5vh;
+	}
+
+	.container h2 {
+		font-size: 3vh;
+	}
+
+	.container > div {
+		padding: 1.2vh 0;
+	}
+
+	.container img {
+		margin: 1.2vh auto;
+	}
+
+    .legenda{
+		font-size: 1.7vh;
+    }
+
+	footer {
+		gap: 4vw;
+		padding: 2.4vh 5vw;
+	}
+
+    .foto-autor {
+        height: 15vh;
+        width: auto;
+        border-radius: 50%;
+    }
+
+	.foto-prof{
+		height:15vh;
+		width:auto;
+		border-radius: 50%;
+	}
+
+	.lista {
+		padding-left: 5vw;
+	}
+
+	li {
+		margin-bottom: 1.1vh;
+    }
+
+	.titulo-docente{
+		margin:0;
+		font-weight: bold;
+	}
+
+	.txt-docente{
+		margin-top: 0;
+	}
+}
